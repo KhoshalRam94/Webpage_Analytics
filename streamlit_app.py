@@ -1,5 +1,5 @@
 import streamlit as st
-import streamlit-analytics
+import streamlit_analytics
 
 with streamlit_analytics.track():
   st.write("Write your Name.")
