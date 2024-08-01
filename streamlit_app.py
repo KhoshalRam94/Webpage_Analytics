@@ -1,5 +1,7 @@
 import streamlit as st
+import streamlit_analytics
 
-st.text_input("Write your Name.")
-st.selectbox("Which is your favourite",["DS","DE","AI","ML"])
-st.button("Click me")
+with streamlit_analytics.track():
+  st.text_input("Write your Name.")
+  st.selectbox("Which is your favourite",["DS","DE","AI","ML"])
+  st.button("Click me")
